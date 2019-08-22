@@ -1,0 +1,5 @@
+number_1 = int(input("What is the first number?"))
+number_2 = int(input("What is the second number?"))
+print("Show the even numbers from", number_1, "to", number_2)
+print("Show the odd numbers from", number_1, "to", number_2)
+print("Show the squares from", number_1, "to", number_2)
