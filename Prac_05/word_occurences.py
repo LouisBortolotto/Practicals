@@ -17,8 +17,5 @@ max_word = 0
 
 for word in sorted_words:
     if len(word) > max_word:
-        word = max_word
-    print("{:{}}  {}".format(word, max_word, words[word]))
-
-
-print(sorted_words)
+        max_word = len(word)
+    print("{:{}} : {}".format(word, max_word, words[word]))
