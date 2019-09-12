@@ -16,4 +16,4 @@ class Guitar:
             return False
 
     def __str__(self):
-        return "{} ({}) : ${}".format(self.name, self.year, self.cost)
+        return "{} ({}) worth ${}".format(self.name, self.year, self.cost)
