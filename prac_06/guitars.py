@@ -5,20 +5,14 @@ print("My guitars!")
 guitars = []
 
 name = input("Name =")
-
 while not name == "":
-
     year = input("Year: ")
     cost = input("Cost: ")
-
-    name = Guitar(name, int(year), float(cost))
-    guitars.append(name)
-
+    guitar = Guitar(name, int(year), float(cost))
+    guitars.append(guitar)
     name = input("Name: ")
 
-guitar_count = 0
-for guitar in guitars:
-    guitar_count = guitar_count + 1
+for guitar_count, guitar in enumerate(guitars, 1):
     if guitar.is_vintage():
         vintage = "vintage"
     else:
