@@ -6,6 +6,9 @@ class Guitar:
         self.year = year
         self.cost = cost
 
+    def __str__(self):
+        return "{} ({}) worth ${}".format(self.name, self.year, self.cost)
+
     def get_age(self):
         return 2019 - self.year
 
@@ -14,6 +17,3 @@ class Guitar:
             return True
         else:
             return False
-
-    def __str__(self):
-        return "{} ({}) worth ${}".format(self.name, self.year, self.cost)
